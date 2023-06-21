@@ -1,0 +1,803 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Lato, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: rgb(44, 59, 59);
+}
+
+
+
+/* ========== All BTN CSS ========== */
+.all_btn {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgb(227, 50, 67);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    z-index: 99;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.all_btn::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(230, 130, 56);
+    transition: all 0.5s ease-in-out 0s;
+    z-index: -1;
+}
+
+.all_btn:hover::before {
+    width: 100%;
+}
+
+/* ========== All Border CSS ========== */
+.border_bottom {
+    position: relative;
+    z-index: 99;
+}
+
+.border_bottom::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: -16px;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(to right, rgb(140, 35, 74) 0%, rgb(140, 35, 74) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 67%, rgb(230, 130, 56) 67%, rgb(230, 130, 56) 100%);
+}
+
+/* ========== All Container CSS ========== */
+.container-fluid {
+    padding: 0px 40px;
+}
+
+/* ========== All Section Header CSS ========== */
+.section_header {
+    margin: 60px 0px 0px;
+    position: relative;
+    z-index: 90;
+}
+
+.section_header::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 16px;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(140, 35, 74) 0%, rgb(140, 35, 74) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 67%, rgb(230, 130, 56) 67%, rgb(230, 130, 56) 100%);
+}
+
+.section_header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background: white;
+    padding: 0px 30px;
+    margin-left: 130px;
+    width: fit-content;
+}
+
+/* ========== All Section CSS ========== */
+.all_section {
+    padding: 40px 0px 0px;
+}
+
+/* ==================== Get A Quote Floating Button ==================== */
+.floating_btn {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    z-index: 92;
+}
+
+
+/* ==================== Top Header Part CSS ==================== */
+.top_header {
+    background-color: rgb(44, 59, 59);
+    padding: 10px 0px 0px;
+}
+
+/* ---------- Phone Number CSS ---------- */
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.number i {
+    color: rgb(191, 82, 163);
+    font-size: 24px;
+}
+
+.number p a {
+    color: rgb(255, 255, 255);
+    margin-left: 12px;
+}
+
+/* ----------Social icon CSS ---------- */
+.social_icon ul {
+    list-style: none;
+    display: flex;
+}
+
+.social_icon ul li {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: all 1s ease-in-out 0s;
+}
+
+.social_icon ul li:hover {
+    transform: rotate(360deg);
+    background: rgb(230, 130, 56);
+}
+
+.social_icon ul li a {
+    color: rgb(44, 59, 59);
+    font-size: 22px;
+}
+
+/* ==================== Header Part CSS ==================== */
+.header_part {
+    background-color: rgb(44, 59, 59);
+}
+
+.navbar-expand-lg .navbar-nav {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand img {
+    width: 65px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 5px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.nav-link:focus {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: rgb(230, 130, 56);
+}
+
+/* ====================================================================================================
+Home Page CSS 
+==================================================================================================== */
+/* ==================== Hero Part CSS ==================== */
+.hero_part {
+    min-height: 80vh;
+    background-image: url("../images/hero images.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 95;
+}
+
+.hero_part::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .6;
+    z-index: -1;
+}
+
+.hero_row {
+    min-height: 80vh;
+}
+
+.hero_tag h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero_tag h1 span {
+    color: #e33243;
+}
+
+
+/* ==================== About Part CSS ==================== */
+.content p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content p span {
+    color: rgb(227, 50, 67);
+}
+
+/* ==================== Service Part CSS ==================== */
+.service_item {
+    margin: 0px;
+    text-align: center;
+    padding: 10px 10px 20px;
+    box-shadow: rgb(221, 221, 221) 0px 0px 5px 2px inset;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out 0s;
+    min-height: 440px !important;
+}
+
+.service_item:hover {
+    box-shadow: rgb(101, 101, 101) 0px 0px 5px 2px inset;
+}
+
+.service_item img {
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.service_item a {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service_item p {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.all_services_btn {
+    margin-top: 40px;
+    font-size: 18px;
+    padding: 14px 30px;
+}
+
+/* ==================== Testimonial Part CSS ==================== */
+.testimonial_content {
+    padding: 20px 15px;
+    border-radius: 3px;
+    box-shadow: rgb(239, 239, 239) 0px 0px 3px 1px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.testimonial_content:hover {
+    box-shadow: rgb(221, 221, 221) 0px 0px 3px 1px;
+}
+
+.testimonial_content p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.testimonial_content p span {
+    color: rgb(227, 50, 67);
+}
+
+/* ==================== Follow Part CSS ==================== */
+.follow_social_icon ul {
+    justify-content: center;
+}
+
+.follow_social_icon ul li {
+    margin: 0px 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    transition: all 1s ease-in-out 0s;
+}
+
+.follow_social_icon ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.facebook {
+    background-color: rgb(140, 35, 74) !important;
+}
+
+.linkedin {
+    background: rgb(227, 50, 67) !important;
+}
+
+.twitter {
+    background: rgb(230, 130, 56) !important;
+}
+
+.instagram {
+    background: rgb(191, 82, 162) !important;
+}
+
+/* ----------live Instagram CSS ---------- */
+.live_instagram h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background: white;
+    padding: 70px 0px;
+    border: 4px solid rgb(44, 59, 59);
+    border-radius: 5px;
+    margin: 40px 0px 60px;
+}
+
+/* ==================== Footer Part CSS ==================== */
+footer {
+    padding: 30px 0px;
+    background-color: rgb(44, 59, 59);
+}
+
+/* ----------Footer Logo CSS ---------- */
+.footer_logo a {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.footer_logo img {
+    width: 65px;
+    margin-right: 10px;
+}
+
+.footer_logo p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin: 20px 0px 0px;
+}
+
+/* ----------Footer Menu CSS ---------- */
+.footer_menu ul {
+    text-align: center;
+    list-style: none;
+}
+
+.footer_menu ul li {
+    margin: 5px 0px;
+}
+
+.footer_menu ul li a {
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.footer_menu ul li a:hover {
+    color: rgb(230, 130, 56);
+}
+
+/* ----------Footer Contact Info CSS ---------- */
+.contact_info {
+    display: flex;
+    align-items: center;
+}
+
+.contact_info i {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin: 10px 15px 10px 0px;
+}
+
+.contact_info a {
+    color: rgb(255, 255, 255);
+}
+
+.contact_info p {
+    color: rgb(255, 255, 255);
+}
+
+.footer_social_icon {
+    margin-top: 20px;
+}
+
+/* ====================================================================================================
+Service Page CSS 
+==================================================================================================== */
+/* ==================== Detail Service Part CSS ==================== */
+.d_service_part {
+    padding: 40px 0px;
+}
+
+.d_service_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #8c234a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.d_service_item img {
+    width: 20%;
+    border-radius: 5px;
+}
+
+.d_service_item_content h5 {
+    margin-bottom: 10px;
+}
+
+.img_left img {
+    margin-right: 20px;
+}
+
+.img_right img {
+    margin-left: 20px;
+}
+
+/* ==================== Best Price BTN  CSS ==================== */
+.best_price_part {
+    background-color: rgb(140, 35, 74);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.best_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best_price h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.best_price_btn {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.best_price_btn::before {
+    border-radius: 3px;
+}
+
+
+/* ====================================================================================================
+Fleet Page CSS 
+==================================================================================================== */
+/* ==================== Vehicles Part CSS ==================== */
+.vehicles_part {
+    padding: 60px 0 0;
+}
+
+/* ----------Vehicles Header CSS ---------- */
+.vehicles_header h2 {
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ---------- Vehicles Item CSS ---------- */
+.vehicles_item {
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: rgb(221, 221, 221) 0px 0px 3px 1px;
+}
+
+.vehicles_item img {
+    border-radius: 5px;
+}
+
+.vehicles_item h3 {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.vehicles_item h3::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, rgb(140, 35, 74) 0%, rgb(140, 35, 74) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 67%, rgb(230, 130, 56) 67%, rgb(230, 130, 56) 100%);
+
+}
+
+.vehicles_item h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, rgb(140, 35, 74) 0%, rgb(140, 35, 74) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 33%, rgb(227, 50, 67) 67%, rgb(230, 130, 56) 67%, rgb(230, 130, 56) 100%);
+
+}
+
+/* ==================== Buses Part CSS ==================== */
+.buses_part {
+    padding: 40px 0px;
+}
+
+.buses_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #8c234a;
+    border-radius: 5px;
+    padding: 10px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.buses_item img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.buses_content h5 {
+    margin: 15px 0;
+}
+
+.buses_item ul {
+    margin-left: 35px;
+}
+
+.buses_item ul li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ====================================================================================================
+Contact Us Page CSS 
+==================================================================================================== */
+
+.contct_part {
+    padding: 60px 0 30px 0;
+}
+
+.contact_item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact_item img {
+    width: 90px;
+}
+
+
+.contact_item h5 {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 15px 0 10px;
+}
+.google_map{
+    padding-bottom: 60px;
+}
+
+
+/* ====================================================================================================
+Get A Quote Page CSS 
+==================================================================================================== */
+/* ==================== form part css ==================== */
+.from_part {
+    padding-bottom: 30px;
+}
+
+/* ----- Input Title CSS ----- */
+.from_title p {
+    margin: 15px 0px 5px;
+    font-size: 20px;
+    color: #8c234a;
+}
+
+
+/* ----- Input Fild CSS ----- */
+.fild {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_fild {
+    width: 47%;
+}
+
+.last_fild {
+    width: 47%;
+}
+
+/* ----- Input Fild CSS ----- */
+input {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    color: #2c3b3b;
+    font-weight: 600;
+    display: block;
+    float: none;
+    font-size: 16px;
+    border: 3px solid #2c3b3b;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+/* ----- Single Input Fild CSS ----- */
+.single {
+    width: 47%;
+}
+
+/* ----- Label CSS ----- */
+label {
+    font-family: Lato, sans-serif;
+    color: #2c3b3b;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    float: none;
+    line-height: 1.3;
+    margin: 12px 0 8px 0;
+    padding: 0;
+}
+
+/* ----- Textarea CSS ----- */
+textarea {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    border: 3px solid #2c3b3b;
+    border-radius: 3px;
+
+}
+
+select {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    color: #2c3b3b;
+    font-weight: 600;
+    font-size: 16px;
+    border: 3px solid #2c3b3b;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+select option {
+    color: #2c3b3b;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* ----- Submit Part CSS ----- */
+.submit_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_link a {
+    text-decoration: underline;
+    color: #8c234a;
+
+}
+
+.checkbox {
+    display: flex;
+}
+
+/* ----- Input Type Checkbox CSS ----- */
+input[type="checkbox"] {
+    margin: 0;
+    margin-right: 10px;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+/* ----- Input Type Submit CSS ----- */
+input[type="submit"] {
+    font-family: Lato, sans-serif;
+    width: 30%;
+    background: #e33243;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center !important;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    transition: .5s all ease-in-out;
+}
+
+input[type="submit"]:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: #e68238;
+}
+
+/* ====================================================================================================
+Terms & Conditions Page CSS 
+==================================================================================================== */
+
+.Terms_Conditions_content ul {
+    margin-left: 40px;
+}
+
+.Terms_Conditions_content ul li {
+    color: #2c3b3b;
+}
+
+.ul_style_circle {
+    list-style: circle;
+}
+
+.ul_style_none {
+    list-style: none;
+    margin-left: 0px !important;
+}
